@@ -20,8 +20,8 @@ names_FMDV_free_vac <- data2[2] %>%
 # Creates two dataframes for each status, then binds them into final product called fin
 names_free <- data.frame(nation = names_FMDV_free, fmdv_status = "Free", vac = "No") 
 free_vac <- data.frame(nation = names_FMDV_free_vac, fmdv_status = "Free", vac = "Yes")
-names(names_free) <- c("nation", "fmdv_status", "vac" )
-names(free_vac) <- c("nation", "fmdv_status", "vac" )
+names(names_free) <- c("region", "fmdv_status", "vac" )
+names(free_vac) <- c("region", "fmdv_status", "vac" )
 
 
 fin <- rbind(names_free, free_vac)
